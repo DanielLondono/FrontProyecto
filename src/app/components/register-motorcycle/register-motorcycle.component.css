@@ -1,0 +1,21 @@
+form{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h2{ 
+    width: 500px;
+    text-align: center;
+    margin-left: 390px;
+}
+
+#title_moto{
+    text-align: center;
+    width: 500px;
+    margin-top: 15px;
+}
+
+#buttonRegistered{
+    margin-top: 15px;
+    margin-left: 535px;
+}

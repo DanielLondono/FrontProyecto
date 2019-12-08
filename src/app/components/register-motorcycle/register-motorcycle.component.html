@@ -1,0 +1,122 @@
+<app-header></app-header>
+
+<form>
+    <div *ngIf="banderaMostrar"class="alert alert-success" role="alert">
+        Se a guardado su registro exitosamente !!
+      </div>
+  <h2 class="border border-success" id="title_registered">REGISTRO DE MOTOCICLETA</h2>
+  <div class="form-row">
+    <div class="col-md-5">
+      <label for="firstName">Primer Nombre</label>
+      <input type="text" class="form-control" id="firstName">
+    </div>
+    <div class="col-5">
+      <label for="SecondName">Segundo Nombre</label>
+      <input type="text" class="form-control" id="secondName">
+    </div>
+
+  </div>
+  <div class="form-row">
+    <div class="col-5">
+      <label for="firtsLastName">Primer Apellido</label>
+      <input type="text" class="form-control" id="firtsLastName">
+    </div>
+    <div class="col-5">
+      <label for="secondLastName">Segundo Apellido</label>
+      <input type="text" class="form-control" id="secondLastName">
+    </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-5">
+          <label for="typeDocument">Tipo de documento</label>
+          <select class="form-control" id="typeDocument">
+            <option></option>
+            <option>Cedula cuidadania</option>
+            <option>NIT</option>
+            <option>Tarjeta de identidad</option>
+            <option>Pasaporte</option>
+          </select>
+      </div>
+      <div class="col-5">
+          <label for="numberDocument"> Numero identificación</label>
+          <input type="text" class="form-control" id="numberDocument">
+      </div>
+  </div>
+
+<div class="form-row">
+    <div class="col-5">
+        <label for="email"> Correo institucional</label>
+        <input type="email" class="form-control" id="email">
+    </div>
+
+    <div class="col-5">
+        <label for="carrer"> Carrera</label>
+        <input type="text" class="form-control" id="carrer">
+  </div>
+</div>
+
+<h2 class="border border-success" id="title_moto">Información motocicleta</h2>
+
+<div class="form-row">
+    <div class="col-5">
+        <label for="placa"> Placa  del vehiculo</label>
+        <input type="text" class="form-control" id="placa">
+    </div>
+
+    <div class="col-5">
+        <label for="matricula"> Matricula</label>
+        <input type="text" class="form-control" id="matricula">
+  </div>
+</div>
+<div class="form-row">
+    <div class="col-5">
+        <label for="typeDocument">Modelo</label>
+        <select class="form-control" id="typeDocument">
+          <option></option>
+          <option>2020</option>
+          <option>2019</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+          <option>2015</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
+        </select>
+    </div>
+
+    <div class="col-5">
+        <label for="carrer">Color</label>
+        <input type="text" class="form-control" id="carrer">
+  </div>
+</div>
+  <div class="form-row">
+    <div class="col-5">
+
+        <label for="typeDocument">Marca</label>
+        <select class="form-control" id="typeDocument">
+          <option></option>
+          <option>Pulsar</option>
+          <option>AKT</option>
+          <option>Yamaha</option>
+          <option>Suzuki</option>
+          <option>Honda</option>
+          <option>KTM</option>
+          <option>Bmw</option>
+          <option>Auteco</option>
+          <option>Kawasaki</option>
+          <option>Ducati</option>
+          <option>Kymco</option>
+        </select>
+    </div>
+  </div>
+
+
+<button  id="buttonRegistered" type="button" (click)="mostrar()" class="btn btn-primary btn-lg">REGISTRAR</button>
+
+
+</form>
+<app-footer></app-footer>

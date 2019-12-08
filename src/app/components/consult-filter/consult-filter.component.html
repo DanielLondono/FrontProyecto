@@ -1,0 +1,90 @@
+<app-header></app-header>
+<h2>CONSULTAS GESTIÓN PARQUEADERO</h2>
+<form>
+    <div class="form-row">
+        <div class="col-md-5">
+          <label for="document">Cedula del propietario</label>
+          <input type="text" class="form-control" id="document">
+        </div>
+        <div class="col-5">
+          <label for="Placa">Placa motocicleta</label>
+          <input type="text" class="form-control" id="Placa">
+        </div>
+      </div>
+          <div class="form-row">
+              <div class="col-5">
+                  <label for="typeDocument">Modelo</label>
+                  <select class="form-control" id="typeDocument">
+                    <option></option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option>
+                    <option>2011</option>
+                    <option>2010</option>
+                  </select>
+              </div>
+
+              <div class="col-5">
+
+                  <label for="typeDocument">Marca</label>
+                  <select class="form-control" id="typeDocument">
+                    <option></option>
+                    <option>Pulsar</option>
+                    <option>AKT</option>
+                    <option>Yamaha</option>
+                    <option>Suzuki</option>
+                    <option>Honda</option>
+                    <option>KTM</option>
+                    <option>Bmw</option>
+                    <option>Auteco</option>
+                    <option>Kawasaki</option>
+                    <option>Ducati</option>
+                    <option>Kymco</option>
+                  </select>
+              </div>
+      </div>
+
+    <div id="containerBtn">
+        <button (click)="consultFilter()" id="btnConsult" type="button" class="btn btn-primary">CONSULTAR</button>
+    </div>    
+  </form>
+
+  <table *ngIf="showTable" class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+<app-footer></app-footer>
